@@ -1,5 +1,5 @@
 # python-daz-test
-> Script desafio: exportar múltiplas poses de múltiplas cenas DAZ
+> Script desafio: exportar múltiplas poses de várias cenas DAZ
 O script já exporta os arquivos em formato .duf na pasta padrão de poses do DAZ. Há a opção de alterar a pasta destino dos arquivos convertidos. 
 ---
 ## Arquivos

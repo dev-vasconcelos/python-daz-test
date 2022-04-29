@@ -1,6 +1,12 @@
 # python-daz-test
 > Script desafio: exportar múltiplas poses de múltiplas cenas DAZ
 ---
+## Arquivos
+| Nome | Descrição |
+| ------ | ------ |
+| export_face_from_scene | Script principal, o que será rodado |
+| test_file | Script para fazer pequenos testes antes de implementar no princpal |
+
 ## Como Rodar
 O script python pode recebe os seguintes parâmetros:
 | Função | Descrição |

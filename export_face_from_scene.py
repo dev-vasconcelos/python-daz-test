@@ -12,6 +12,11 @@ parser.add_argument('--single_scene', '-single' , dest='scene_path', type=str, h
 parser.add_argument('--output_dir', '-out', dest='out_dir', type=str, help='Diretório para output das poses')
 args = parser.parse_args()
 
+# Diretorios padrões
+default_dir = r"C:\Users\\" +os.getlogin() + r"\Documents\DAZ 3D\Studio\My Library\Scenes"
+default_out_dir = r"C:\Users\\" +os.getlogin() + r"\Documents\DAZ 3D\Studio\My Library\Presets\Poses"
+
+
 # Preparação esqueleto arquivo
 group_to_find = "/Head"
 animations = set()
@@ -32,10 +37,6 @@ data_set = {
         "animations": []
     }
 }
-
-# Diretorios padrões
-default_dir = r"C:\Users\\" +os.getlogin() + r"\Documents\DAZ 3D\Studio\My Library\Scenes"
-default_out_dir = r"C:\Users\\" +os.getlogin() + r"\Documents\DAZ 3D\Studio\My Library\Presets\Poses"
 
 def scene_to_pose_file(file_path, filename):
     duf = gzip.open(file_path, "rb")
